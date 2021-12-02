@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{                  
+    background-image: url(img/fondo6.jpg);
+    line-height: 28px;
+    border-radius: 20px;
+    display:flex;
+    margin-bottom: 10px;
+
+    .logo{
+        width: 200px;
+        border-radius:30px;
+        transform:rotateZ(-30deg)
+    }
+    
+    #inicio{
+        color:cornflowerblue;
+        font-size: 33px;
+        align-content: flex-start;
+        animation-name: aparecer;
+        animation-duration: 3s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+    
+        @keyframes aparecer{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+    }
+}
+body{
+    font-family:'Indie Flower', cursive;
+}
+//seccion 1//
+.section1{
+    background:linear-gradient(rgb(255, 255, 128),rgb(249, 250, 178),rgb(252, 253, 186),rgb(254, 255, 209));
+    display:grid;
+    grid-gap:12px;
+    margin-bottom: 20px;
+
+    .productosTransition{
+        background-color:rgb(255, 255, 128) ;
+        text-align: center;
+        font-size: 25px;
+    }
+    #productos{
+        transition: all 5s;
+    }
+    #productos:hover{
+        color: whitesmoke;
+        font-size: 30px;
+    }
+}
+
+.section1 img{
+    width: 200px;
+    height: 200px;
+}
+section img:hover {
+    transform: scale(1.2)
+}
+.boton{
+    padding: 10px;
+    background-color:turquoise;
+    border-radius: 10px;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.boton:hover{
+    text-decoration: none;
+    color: darkslateblue;
+}
+.pretal{
+    margin-top: 10px;
+}
+//seccion 2//
+.section2{
+    background:linear-gradient(rgb(85, 116, 209), rgb(149, 172, 241),rgb(166, 185, 240),rgb(214, 222, 247));
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .adiestramientoTransition{
+        background-color: rgb(85, 116, 209);
+        font-size: 25px;
+        text-align: center;
+    }
+    #adiestramiento{
+        transition:all 5s;
+    }
+    #adiestramiento:hover{
+        color:whitesmoke;
+        font-size: 30px;
+    }
+    
+    .parrafoAdis{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .formulario1{
+        display: flex;
+        flex-direction:column;
+        align-self:center;
+        width: 900px;
+        background-color: white;
+        border-radius: 10px;
+        align-items: center;
+    } 
+    legend{
+        font-size:20px;
+        text-align: center;
+    }
+    .mascota{
+        font-size: 23px;
+        text-align: center;
+    }
+    .tamaño{
+        text-align: center;
+        font-size: 22px;
+    }
+    .option{
+        text-align: center;
+    }
+    .s{
+        text-align: center;
+        font-size: 22px;
+    }
+    .s1{
+        text-align: center;
+        font-size: 22px;
+    }
+    .s2{
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .titular{
+        font-size:23px;
+        text-align: center;
+    }
+    .turno{
+        margin-top:5px;
+        text-align: center;
+        font-size: 22px;
+        white-space: pre-line;
+    }
+    .turno input{
+        width:600px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .acepta{
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .enviar input{
+        font-size: 22px;
+        width:150px;
+        height: 50px;
+    
+    }
+    .enviar input:focus{
+        border-color:lightskyblue;
+        background-color: lavender;
+    
+    } 
+}
+//seccion 3//
+.section3{ 
+    background:linear-gradient(rgb(50, 192, 178), rgb(100, 230, 217), rgb(172, 241, 235),rgb(191, 247, 247), rgb(226, 250, 248));
+    margin-bottom: 20px;
+
+    .experienciaTransition{
+        background-color: rgb(50, 192, 178);
+        font-size: 25px;
+        text-align: center;
+    }
+        #experiencia{
+            transition: all 5s;
+        }
+        #experiencia:hover{
+            color:whitesmoke;
+            font-size:30px;
+        }
+    h5{
+        text-align: center;
+    }
+    .habilidades{
+        text-align: center;
+    }
+}
+//seccion 4//
+.section4{
+    background:linear-gradient(rgb(255, 204, 110),rgb(255, 217, 147),rgb(255, 215, 140),rgb(253, 219, 154),rgb(255, 239, 208));
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .mayoristasTransition{
+        background-color: rgb(255, 204, 110);
+        font-size: 25px;
+        text-align: center;
+
+        #mayoristas{
+            transition: all 5s;
+        }
+        #mayoristas:hover{
+            color:whitesmoke;
+            font-size: 30px;
+        }
+    }
+    
+    .parrafoMay{
+        text-align: center;
+    }
+    .titulo3{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .iframe{
+        display: flex;
+        flex-direction: row;
+        align-self:center;    
+    }
+}
+//seccion 5//
+.section5{
+    background:linear-gradient(rgb(125, 216, 216),rgb(125, 216, 216),rgb(155, 237, 237),rgb(177, 241, 241),rgb(204, 240, 240));
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+
+    .contactoTransition{
+        text-align: center;
+        font-size: 25px;
+        background-color:rgb(125, 216, 216) ;
+        color:black;
+
+        #contacto{
+            transition: all 5s;
+        }
+        #contacto:hover{
+            color:whitesmoke;
+            font-size: 30px;
+        }
+    }
+}
+.formulario2{
+    display: flex;
+    flex-direction:column;
+    align-self:center;
+    align-items: center;
+    width: 900px;
+    background-color:white;
+    border-radius: 10px;
+}
+
+.nombre{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom:10px;
+    margin-top: 10px;
+    white-space: pre-line;
+    }
+.nombre input{
+    text-align: center;
+    margin-top: 10px;
+    border-color: #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    width:700px;
+    }
+.nombre input:focus{
+    background-color:lightcyan;
+    }
+.apellido{
+    text-align: center;
+    font-size: 22px;
+    white-space: pre-line;
+    }
+.apellido input{
+    text-align: center;
+    margin-bottom: 10px;
+    border-color: #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    width: 700px;
+    }
+.apellido input:focus{
+    background-color: lightcyan;
+    }
+.email{
+    text-align: center;
+    font-size: 22px;
+    white-space: pre-line;
+    }
+.email input{
+    text-align: center;
+    margin-bottom: 10px;
+    border-color:#ccc;
+    border-radius: 5px;
+    padding: 7px;
+    width: 700px;
+    }
+.email input:focus{
+    background-color: lightcyan;
+    }
+.option{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-color:#ccc;
+    width: 200px;
+    font-size: 22px;
+    }
+.texttarea{
+    border-radius: 5px;
+    border-color: #ccc;
+    width:700px;
+    }
+.acepta{
+    text-align: center;
+    font-size: 22px;
+    }
+.enviar{
+    font-size: 22px;
+    width:150px;
+    height: 50px;
+    }
+.enviar input:focus{
+    border-color:lightskyblue;
+    background-color: lavender;
+    }
+
+//boton wpp//
+.wpp{
+    height: 50px;
+    width: 50px;
+    position:fixed;
+    bottom:50px;
+    right: 50px;
+    color:rgb(37, 79, 158);
+    font-size: 60px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+//pie de pagina//
+footer{ 
+    background-image:url(img/fondo6.jpg);
+    line-height: 50px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+//medios de pago//
+.mediosDepago{
+    background-color:rgb(243, 239, 232);
+    text-align:center;
+
+    .mediosDepago__titulo2{
+        text-align: center;
+    }
+}
+//terminos y condiciones//
+.color-indigo{
+    color: indigo;
+    font-size: 25px;
+}
+.color-darkturquoise{
+    color:darkturquoise;
+    font-size: 25px;
+}
+.color-orangered{
+    color:orangered;
+    font-size: 25px;
+}
+.color-mediumslateblue{
+    color:mediumslateblue;
+    font-size: 25px;
+}
+//tienda// 
+.contenedora{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    align-content: center;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+.parrafo1{
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.boton2{
+    align-self: center;
+    background-color:lightcyan;
+    color:black;
+    padding: 12px;
+    margin: 10px;
+    border-color:lightseagreen;
+    width:750px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.direccion{
+    white-space:pre-line;
+}
+.pago{
+    flex-direction:row;
+    white-space: pre-line;
+}
+.checkbox{
+    white-space: pre-wrap;
+}
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+    white-space: nowrap;
+}
+//variables//
+$inicio:color cornflowerblue;
+$section1:linear-gradient(rgb(255, 255, 128),rgb(249, 250, 178),rgb(252, 253, 186),rgb(254, 255, 209));
+$section2:linear-gradient(rgb(85, 116, 209), rgb(149, 172, 241),rgb(166, 185, 240),rgb(214, 222, 247));
+$section3:linear-gradient(rgb(50, 192, 178), rgb(100, 230, 217), rgb(172, 241, 235),rgb(191, 247, 247), rgb(226, 250, 248));
+$section4:linear-gradient(rgb(255, 204, 110),rgb(255, 217, 147),rgb(255, 215, 140),rgb(253, 219, 154),rgb(255, 239, 208));
+$section5:linear-gradient(rgb(125, 216, 216),rgb(125, 216, 216),rgb(155, 237, 237),rgb(177, 241, 241),rgb(204, 240, 240));
+
+//each//
+$colores:indigo,
+darkturquoise,
+orangered,
+mediumslateblue;
+
+@each $color in $colores{
+    .color-#{$color} {
+        font-size: 20px + 5px;
+        color: $color;
+    }
+}
+//------------------------responsive-------------------------------------------//
+@media only screen and (max-width:768px){
+    .logo{
+        width: 70px;
+    }
+    #inicio{
+        font-size:20px;
+    } 
+    .flex-item1{
+        display:flex;
+        flex-direction: column;
+    }
+    .flex-item2 nav ul{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .section1{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+    .section1 img{
+        flex-direction: column;
+        align-self: center;
+    }
+    .producto-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iframe{
+        width: 50%;
+        height: 50%;
+    }
+    .wpp{
+        height: 25px;
+        width: 25px;
+        font-size: 50px;
+        text-align: right;
+        bottom:25px;
+        right: 25px;
+        line-height: 25px;
+    }
+    .boton{
+        padding: 10px;
+        background-color:turquoise;
+        border-radius: 10px;
+        color: whitesmoke;
+        text-transform: capitalize;
+    }
+    .boton:hover{
+        text-decoration: none;
+        color: darkslateblue;
+    }
+    .pretal{
+        margin-top: 10px;
+    }
+    //--------------------------formulario 1------------------------------------//
+    .formulario1{
+        display: flex;
+        flex-direction:column;
+        align-self:center;
+        width: 305px;
+        background-color: white;
+        border-radius: 10px;
+    } 
+    legend{
+        font-size:20px;
+        text-align: center;
+    }
+    .mascota{
+        font-size: 19px;
+        text-align: center;
+    }
+    .tamaño{
+        text-align: center;
+        font-size: 18px;
+    }
+    .option{
+        font-size: 17px;
+        border-radius:5px;
+        text-align: center;
+    }
+    .s{
+        text-align: center;
+        font-size: 18px;
+    }
+    .s1{
+        text-align: center;
+        font-size: 17px;
+    }
+    .s2{
+        text-align: center;
+        font-size: 17px;
+    }
+    .titular{
+        font-size:19px;
+        text-align: center;
+    }
+    .turno{
+        margin-top:5px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .turno input{
+        width:300px;
+        margin-bottom: 5px;
+    }
+    .acepta{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .enviar input{
+        font-size: 16px;
+        margin-top:8px;
+        width:80px;
+        height:40px;
+    }
+    .enviar input:focus{
+        border-color:lightskyblue;
+        background-color: lavender;
+    }
+    //---------------------formulario 2 -------------------------//
+    .formulario2{
+        display: flex;
+        flex-direction:column;
+        align-self:center;
+        align-items: center;
+        width: 305px;
+        background-color:white;
+        border-radius: 10px;
+    }
+    
+    .nombre{
+        text-align: center;
+        font-size: 18px;
+    }
+    .nombre input{
+        margin-bottom: 10px;
+        border-color: #ccc;
+        border-radius: 5px;
+        padding: 8px;
+        width: 300px;
+    }
+    .nombre input:focus{
+        background-color:lightcyan;
+    }
+    .apellido{
+        text-align: center;
+        font-size: 18px;
+    }
+    .apellido input{
+        margin-bottom: 10px;
+        border-color: #ccc;
+        border-radius: 5px;
+        padding: 8px;
+        width: 300px;
+    }
+    .apellido input:focus{
+        background-color: lightcyan;
+    }
+    .email{
+        text-align: center;
+        font-size: 18px;
+    }
+    .email input{
+        margin-bottom: 10px;
+        border-color:#ccc;
+        border-radius: 5px;
+        padding: 8px;
+        width: 300px;
+    }
+    .email input:focus{
+        background-color: lightcyan;
+    }
+    .option{
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border-color:#ccc;
+        width: 100px;
+        font-size: 15px;
+    }
+    .texttarea{
+        border-radius: 5px;
+        border-color: #ccc;
+        width: 300px;
+    }
+    .enviar{
+        font-size: 16px;
+        width: 80px;
+        height: 40px;
+    }
+    .enviar input:focus{
+        border-color:lightskyblue;
+        background-color: lavender;
+    }
+}
+//tienda//
+.contenedora{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    align-content: center;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+.parrafo1{
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.boton2{
+    align-self: center;
+    background-color:lightcyan;
+    color:black;
+    padding: 12px;
+    margin: 10px;
+    border-color:lightseagreen;
+    width:300px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.direccion{
+    white-space:pre-line;
+}
+.pago{
+    flex-direction:row;
+    white-space: pre-line;
+}
+.checkbox{
+    white-space: pre-wrap;
+}
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+    white-space: nowrap;
+}
